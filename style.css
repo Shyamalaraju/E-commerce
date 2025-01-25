@@ -1,0 +1,320 @@
+body{
+    font-family: sans-serif;
+}
+.btn1{
+    background-color: hsl(352, 97%, 57%);
+}
+.btn{
+    color: #fff !important;
+}
+.navbar{
+    box-shadow: 0 3px 9px 3px rgba(0,0,0,0.1); 
+    background-color: rgb(143, 158, 157);  
+}
+
+.navbar-brand img{
+    width: 30px;
+}
+.navbar-brand span{
+    letter-spacing: 2px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.nav-link:hover {
+    color: hsl(355, 98%, 58%)!important; 
+    border-radius: 15px; 
+}
+.nav-item{
+    border-bottom: 0.5px solid rgb(0,0,0,0.05);
+} 
+
+/* background video */
+.car1 .carousel-item video {
+    height: 569px;
+    object-fit: cover;
+    width: 100% ;
+}
+
+.car1 .carousel-item::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); 
+    z-index: 1;
+}
+
+.car1 .carousel-caption {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 2;
+} 
+.content h1{
+       font-family: 'Times New Roman', Times, serif;
+       font-size: 50px;
+}
+
+.content h1:hover {
+    color: #ffffff; 
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.8), 0 0 25px rgba(255, 255, 255, 0.6); 
+    transition: all 0.3s ease-in-out; 
+    transform: scale(1.1);
+  }
+.content p{
+    font-size: 20px;
+    color: rgb(182, 177, 177);
+}   
+.title h2::before{
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 50px;
+    background-color: hsl(355, 98%, 58%);
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.service-item:hover{
+    cursor: pointer;
+    color: hsl(355, 98%, 58%);
+}
+.fa-check{
+    color: rgb(133, 248, 133);
+}
+/* collection page */
+#collection{
+    background-color: rgb(208, 250, 250);
+}
+#collection .color{
+    border: 2px black !important;
+    border-radius: 20px;
+    color: black !important;
+    padding: 10px;
+}
+.active-color{
+    background-color: hsl(355, 98%, 58%) !important;
+    color: #fff !important;
+    border-color: hsl(355, 98%, 58%) !important;
+}
+.color:hover{
+    background-color: hsl(355, 98%, 58%) !important;
+    color: #fff !important;
+    border-color: hsl(355, 98%, 58%) !important;
+}
+.collection-img span{
+    top: 20px;
+    right: 20px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background-color: hsl(355, 98%, 58%) !important;
+}
+.pro-card:hover{
+    color: rgb(236, 38, 38);
+    transform: scale(1.1);
+
+}
+.fa-star{
+    color: hsl(355, 98%, 58%);
+}
+.list span{
+    top: 10px; 
+    left: 10px; 
+    background: red; 
+    padding: 5px 10px; 
+    border-radius: 5px;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+}
+.overlay {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.card:hover .overlay {
+  opacity: 1;
+}
+.overlay button {
+  background-color: rgb(117, 248, 248);
+  border: none;
+  padding: 10px 15px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.overlay button:hover {
+  background-color: rgb(4, 240, 200);
+  color: black !important;
+}
+
+.overlay .fa-heart{
+    color: red;
+    padding: 2px;
+    margin-right: 5px; 
+    transition: color 0.3s ease; 
+}
+#collection .modal-body a:hover{
+    background-color: rgb(58, 57, 57);
+    color: #fff !important;
+}
+   /* special page */
+   #special{
+    background-color: rgb(208, 250, 250);
+}
+.special-img span{
+    top: 20px;
+    right: 20px;
+}
+.special-list .btn{
+    padding: 8px 20px!important;
+}
+
+.special-img img{
+    transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.special-img:hover img{
+    transform: scale(1.2);
+    transform: scale(1.2);
+     transform: scale(1.2);
+}
+.special-img .fa-heart{
+    color: hsl(355, 98%, 58%);
+}
+.btnsp{
+    background-color: hsl(355, 98%, 58%) !important;
+    color: #fff !important;
+}
+.btnsp:hover{
+    background-color: rgb(68, 65, 65) !important;
+}
+#offers{
+    background: url(images/offer_img.jpg) center/cover no-repeat;
+}
+#offers .row{
+    min-height: 55vh;
+}
+.offers-content span{
+    font-size: 28px;
+}
+.offers-content h2{
+    font-size: 60px;
+    }
+.offers-content .btn{
+        
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 20px;
+}
+#blogs .card:hover{
+    transform: translateY(-20px);
+    color: hsl(355, 98%, 58%);
+}
+#about{
+    background-color: rgb(208, 250, 250);
+}
+
+/* newsletter */
+#newsletter{
+    background-color: rgba(179, 179, 179, 0.05);
+}
+#newsletter p{
+    max-width: 600px;
+}
+#newsletter .input-group{
+    max-width: 500px;
+}
+#newsletter .form-control{
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+#newsletter .btn{
+    background-color: hsl(355, 98%, 58%);
+    color: #fff;
+    border-color:hsl(355, 98%, 58%);
+}
+#newsletter .btn:hover{
+    background-color: #000;
+    border-color: #000;
+}
+/* popular */
+#popular{
+    background-color: rgb(208, 250, 250);
+}
+#popular .modal-body a:hover{
+    background-color: rgb(58, 57, 57);
+    color: #fff !important;
+}
+.image-container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+  }
+  .image-container:hover .hover-image {
+    transform: scale(1.5); 
+    z-index: 10; 
+     }
+.image-container:hover{
+
+    color: #fff;
+    background-color: rgb(148, 141, 141);
+}  
+.hover-image {
+    transition: transform 0.3s ease, z-index 0s;
+    width: 100%;
+    height: auto;
+}
+        #onlinePaymentDetails, #codDetails {
+            display: none;
+        }
+        #onlinePayment:checked ~ #paymentModal .modal-body #onlinePaymentDetails {
+            display: block;
+        }
+        #cod:checked ~ #paymentModal .modal-body #codDetails {
+            display: block;
+        }
+/* contact page */
+  .conimg {
+    background-image: url(images/contact.jpg); 
+    background-size: cover;
+    background-position: right;
+  }
+  .btnmodal{
+    background-color: hsl(355, 98%, 58%);
+    color: #fff;
+    border: none;
+
+  }
+  .contact-info {
+    background-color: black; /* Black background */
+    color: white; /* White text color */
+    padding: 40px 0; /* Add some padding to the section */
+  }
+  .contact-info h4 {
+    color: white; 
+  }
+  
+  .contact-info p {
+    color: white; 
+  }
+  
+  .contact-info .btn {
+    margin-top: 10px;
+  }
+  

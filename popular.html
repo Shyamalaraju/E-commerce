@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popular</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg  py-2 ">
+    <div class="container">
+      <a class="navbar-brand d-flex justify-content-around align-items-center order-lg-0" href="index.html">
+        <img src="images/shopping-bag-icon.png" class="" alt="">Trendy</a>
+        <span class="text-uppercase fw-lighter ms-2"></span>
+        <div class="order-lg-2 nav-btns">
+          <button type="button" class="btn position-relative">
+          <i class="fa fa-shopping-cart text-dark"></i>
+          <span class="btn1 position-absolute top-0 start-100 translate-middle badge ">5</span>
+          </button>
+          <button class="btn position-relative">
+          <i class="fa fa-heart text-dark"></i>
+          <span class="btn1 position-absolute top-0 start-100 translate-middle badge ">2</span>
+          </button>
+          <button class="btn position-relative">
+          <i class="fa fa-search text-dark"></i>
+          <span class="btn1 position-absolute top-0 start-100 translate-middle badge "></span>
+           </button>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse order-lg-1" id="navmenu">
+          <ul class="navbar-nav mx-auto text-center">
+            <li class="nav-item py-2 px-2">
+              <a class="nav-link text-uppercase text-dark" href="index.html">Home</a>
+            </li>
+            <li class="nav-item py-2 px-2">
+              <a class="nav-link text-dark text-uppercase" href="collection.html">Collection</a>
+            </li>
+            <li class="nav-item py-2 px-2">
+              <a class="nav-link text-dark text-uppercase" href="special.html">Special</a>
+            </li>
+            <li class="nav-item py-2 px-2">
+              <a class="nav-link text-dark text-uppercase" href="blog.html">Blogs</a>
+            </li>
+            <li class="nav-item py-2 px-2">
+              <a class="nav-link text-dark text-uppercase" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item py-2 px-2">
+              <a class="nav-link text-dark text-uppercase" href="popular.html">Popular</a>
+            </li>
+            
+          </ul>
+        </div>
+    </div>
+  </nav>
+      
+      <section id = "popular" class = "py-5 ">
+        <div class = "container ">
+            <div class = "title text-center pt-3 pb-5">
+                <h2 class = "position-relative d-inline-block ms-4">Popular Of This Year</h2>
+            </div>
+
+            <div class="row d-flex justify-content-around">
+                <!-- Top Rated Products -->
+                <div class="col-md-6 col-lg-4 row g-3">
+                    <h3 class="fs-7">Top Rated</h3>
+            
+                    <div class="d-flex align-items-center justify-content-start image-container">
+                        <img src="images/top_rated_1.jpg" alt="" class="hover-image img-fluid w-25">
+                        <div class="ms-4">
+                            <p class="mb-0">Blue Shirt</p>
+                            <span>$ 20.00</span>
+                            <a href="#" class="btn btnsp d-flex" data-bs-toggle="modal" data-bs-target="#paymentModal"><i class="fa-solid fa-bag-shopping py-1 px-2 "></i>Buy Now</a>
+                        </div>
+                    </div>
+            
+                    <div class="d-flex align-items-center justify-content-start image-container">
+                        <img src="images/top_rated_2.jpg" alt="" class="hover-image img-fluid w-25">
+                        <div class="ms-4">
+                            <p class="mb-0">Watch</p>
+                            <span>$ 10.00</span>
+                            <a href="#" class="btn btnsp d-flex" data-bs-toggle="modal" data-bs-target="#paymentModal"><i class="fa-solid fa-bag-shopping py-1 px-2"></i>Buy Now</a>
+                        </div>
+                    </div>
+            
+                    <div class="d-flex align-items-center justify-content-start image-container">
+                        <img src="images/top_rated_3.jpg" alt="" class="hover-image img-fluid w-25">
+                        <div class="ms-4">
+                            <p class="mb-0">Modern Hoodie</p>
+                            <span>$ 40.00</span>
+                            <a href="#" class="btn btnsp d-flex" data-bs-toggle="modal" data-bs-target="#paymentModal"><i class="fa-solid fa-bag-shopping py-1 px-2"></i>Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Best Selling Products -->
+                <div class="col-md-6 col-lg-4 row g-3">
+                    <h3 class="fs-7">Best Selling</h3>
+            
+                    <div class="d-flex align-items-center justify-content-start image-container">
+                        <img src="images/best_selling_1.jpg" alt="" class="hover-image img-fluid w-25">
+                        <div class="ms-4">
+                            <p class="mb-0">Formal Blazer</p>
+                            <span>$ 80.00</span>
+                            <a href="#" class="btn btnsp d-flex" data-bs-toggle="modal" data-bs-target="#paymentModal"><i class="fa-solid fa-bag-shopping py-1 px-2"></i>Buy Now</a>
+                        </div>
+                    </div>
+            
+                    <div class="d-flex align-items-center justify-content-start image-container">
+                        <img src="images/best_selling_2.jpg" alt="" class="hover-image img-fluid w-25">
+                        <div class="ms-4">
+                            <p class="mb-0">Casual Jacket</p>
+                            <span>$ 60.00</span>
+                            <a href="#" class="btn btnsp d-flex" data-bs-toggle="modal" data-bs-target="#paymentModal"><i class="fa-solid fa-bag-shopping py-1 px-2"></i>Buy Now</a>
+                        </div>
+                    </div>
+            
+                    <div class="d-flex align-items-center justify-content-start image-container">
+                        <img src="images/best_selling_3.jpg" alt="" class="hover-image img-fluid w-25">
+                        <div class="ms-4">
+                            <p class="mb-0">T-shirt</p>
+                            <span>$ 40.00</span>
+                            <a href="#" class="btn btnsp d-flex" data-bs-toggle="modal" data-bs-target="#paymentModal"><i class="fa-solid fa-bag-shopping py-1 px-2"></i>Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- On Sale Products -->
+                <div class="col-md-6 col-lg-4 row g-3">
+                    <h3 class="fs-7">On Sale</h3>
+            
+                    <div class="d-flex align-items-center justify-content-start image-container">
+                        <img src="images/on_sale_1.jpg" alt="" class="hover-image img-fluid w-25">
+                        <div class="ms-4">
+                            <p class="mb-0">Trendy Bag</p>
+                            <span>$ 30.00</span>
+                            <a href="#" class="btn btnsp d-flex" data-bs-toggle="modal" data-bs-target="#paymentModal"><i class="fa-solid fa-bag-shopping py-1 px-2"></i>Buy Now</a>
+                        </div>
+                    </div>
+            
+                    <div class="d-flex align-items-center justify-content-start image-container">
+                        <img src="images/on_sale_2.jpg" alt="" class="hover-image img-fluid w-25">
+                        <div class="ms-4">
+                            <p class="mb-0">Blue Hoodie</p>
+                            <span>$50.55</span>
+                            <a href="#" class="btn btnsp d-flex" data-bs-toggle="modal" data-bs-target="#paymentModal"><i class="fa-solid fa-bag-shopping py-1 px-2"></i>Buy Now</a>
+                        </div>
+                    </div>
+            
+                    <div class="d-flex align-items-center justify-content-start image-container">
+                        <img src="images/on_sale_3.jpg" alt="" class="hover-image img-fluid w-25">
+                        <div class="ms-4">
+                            <p class="mb-0">Formal Shoes</p>
+                            <span>$ 40.50</span>
+                            <a href="#" class="btn btnsp d-flex" data-bs-toggle="modal" data-bs-target="#paymentModal"><i class="fa-solid fa-bag-shopping py-1 px-2"></i>Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+           <!-- Payment Selection Modal -->
+<div class="modal fade" id="paymentModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Select Payment Method</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p>Please choose a payment method:</p>
+                <a href="#onlinePaymentModal" class="btn  text-dark w-100" data-bs-toggle="modal" data-bs-dismiss="modal"><i class="fa-solid fa-money-bill px-2"></i>Online Payment</a>
+                <a href="#codModal" class="btn text-dark  w-100 mt-2" data-bs-toggle="modal" data-bs-dismiss="modal"><i class="fa-solid fa-hand-holding-dollar px-2"></i>Cash on Delivery</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="onlinePaymentModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Online Payment</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Payment Options -->
+                <div class="mb-3 text-center g-5">
+                    <button class="btn btnsp" data-bs-toggle="collapse" data-bs-target="#upiPayment" aria-expanded="false" aria-controls="upiPayment"><i class="fa-solid fa-wallet px-2"></i>
+                        UPI
+                    </button>
+                    <button class="btn btnsp" data-bs-toggle="collapse" data-bs-target="#cardPayment" aria-expanded="false" aria-controls="cardPayment"><i class="fa-regular fa-credit-card px-2"></i>
+                        Card
+                    </button>
+                </div>
+
+                <!-- Payment Sections (Inside a Parent) -->
+                <div id="paymentOptions">
+                    <!-- UPI Payment Content -->
+                    <div class="collapse" id="upiPayment" data-bs-parent="#paymentOptions">
+                        <div class="card card-body ">
+                            <h5>UPI Payment</h5>
+                            <label for="upiId" class="form-label">Enter UPI ID:</label>
+                            <input type="text" class="form-control" id="upiId" placeholder="example@upi">
+                            <button class="payNowButton btn btn-success w-100 mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#paymentStatus" aria-expanded="false" aria-controls="paymentStatus">
+                                Pay Now
+                              </button>
+                              <div class="collapse" id="paymentStatus">
+                                <p class="paymentMessage text-center text-white bg-secondary mt-2"><i class="fa-solid fa-check  px-2"></i>Paid Successful</p>
+                              </div>
+                        </div>
+                    </div>
+
+                    <!-- Card Payment Content -->
+                    <div class="collapse" id="cardPayment" data-bs-parent="#paymentOptions">
+                        <div class="card card-body">
+                            <h5>Card Payment</h5>
+                            <form>
+                                <div class="mb-3">
+                                    <label for="cardNumber" class="form-label">Card Number</label>
+                                    <input type="text" class="form-control" id="cardNumber" placeholder="1234 5678 9101 1121">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="cardName" class="form-label">Cardholder Name</label>
+                                    <input type="text" class="form-control" id="cardName" placeholder="John Doe">
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label for="expiryDate" class="form-label">Expiry Date</label>
+                                        <input type="text" class="form-control" id="expiryDate" placeholder="MM/YY">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="cvv" class="form-label">CVV</label>
+                                        <input type="text" class="form-control" id="cvv" placeholder="123">
+                                    </div>
+                                </div>
+                                <button class="payNowButton btn btn-success w-100 mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#paymentStatus" aria-expanded="false" aria-controls="paymentStatus">
+                                    Pay Now
+                                  </button>
+                                  <div class="collapse" id="paymentStatus">
+                                    <p class="paymentMessage text-center text-white bg-secondary mt-2"><i class="fa-solid fa-check px-2"></i>Paid Successful</p>
+                                  </div>
+                                  
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+  
+  <!-- Modal Structure -->
+  <div class="modal fade" id="codModal" tabindex="-1" aria-labelledby="codModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="codModalLabel">Cash on Delivery</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Complete your Cash on Delivery payment below.</p>
+          <div class="mb-3">
+            <label for="billingAddress" class="form-label">Billing Address</label>
+            <input type="text" class="form-control" id="billingAddress" placeholder="Enter your address" required>
+        </div>
+
+        <!-- Contact Number -->
+        <div class="mb-3">
+            <label for="contactNumber" class="form-label">Contact Number</label>
+            <input type="text" class="form-control" id="contactNumber" placeholder="Enter your contact number" required>
+        </div>
+
+        <!-- Confirm Order Button -->
+        <button class="payNowButton btn btn-success w-100 mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#paymentStatus" aria-expanded="false" aria-controls="paymentStatus">
+            Confirm Order
+          </button>
+          <div class="collapse" id="paymentStatus">
+            <p class="paymentMessage text-center text-white bg-secondary mt-2"><i class="fa-solid fa-check px-2"></i>Order Confirmed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+            
+            
+        </div>
+    </section>  
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
