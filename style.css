@@ -9,7 +9,7 @@ body{
 }
 .navbar{
     box-shadow: 0 3px 9px 3px rgba(0,0,0,0.1); 
-    background-color: rgb(143, 158, 157);  
+    background-color: rgb(179, 184, 183);  
 }
 
 .navbar-brand img{
@@ -42,7 +42,7 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4); 
+    background: rgba(0, 0, 0, 0.2); 
     z-index: 1;
 }
 
@@ -88,9 +88,7 @@ body{
     color: rgb(133, 248, 133);
 }
 /* collection page */
-#collection{
-    background-color: rgb(208, 250, 250);
-}
+
 #collection .color{
     border: 2px black !important;
     border-radius: 20px;
@@ -173,9 +171,7 @@ body{
     color: #fff !important;
 }
    /* special page */
-   #special{
-    background-color: rgb(208, 250, 250);
-}
+   
 .special-img span{
     top: 20px;
     right: 20px;
@@ -226,9 +222,6 @@ body{
     transform: translateY(-20px);
     color: hsl(355, 98%, 58%);
 }
-#about{
-    background-color: rgb(208, 250, 250);
-}
 
 /* newsletter */
 #newsletter{
@@ -254,9 +247,7 @@ body{
     border-color: #000;
 }
 /* popular */
-#popular{
-    background-color: rgb(208, 250, 250);
-}
+
 #popular .modal-body a:hover{
     background-color: rgb(58, 57, 57);
     color: #fff !important;
@@ -280,15 +271,16 @@ body{
     width: 100%;
     height: auto;
 }
-        #onlinePaymentDetails, #codDetails {
-            display: none;
-        }
-        #onlinePayment:checked ~ #paymentModal .modal-body #onlinePaymentDetails {
-            display: block;
-        }
-        #cod:checked ~ #paymentModal .modal-body #codDetails {
-            display: block;
-        }
+#onlinePaymentDetails, #codDetails {
+   display: none;
+ }
+ #onlinePayment:checked ~ #paymentModal .modal-body #onlinePaymentDetails {
+   display: block;
+}
+ #cod:checked ~ #paymentModal .modal-body #codDetails {
+   display: block;
+ }
+
 /* contact page */
   .conimg {
     background-image: url(images/contact.jpg); 
@@ -302,9 +294,9 @@ body{
 
   }
   .contact-info {
-    background-color: black; /* Black background */
-    color: white; /* White text color */
-    padding: 40px 0; /* Add some padding to the section */
+    background-color: black; 
+    color: white; 
+    padding: 40px 0; 
   }
   .contact-info h4 {
     color: white; 
