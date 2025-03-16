@@ -1,6 +1,24 @@
 body{
     font-family: sans-serif;
 }
+#cart-count {
+    position: absolute;
+    top: -8px;  /* Badge correct position la irukkum */
+    right: -8px; /* Adjust pannunga if needed */
+    min-width: 22px; /* Square size maintain panna */
+    min-height: 22px; /* Square size maintain panna */
+    background: red;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px; /* Square shape maintain */
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    line-height: normal; /* Text perfect center la varum */
+    padding: 3px; /* Adjust for centering */
+}
 .btn1{
     background-color: hsl(352, 97%, 57%);
 }
@@ -61,7 +79,7 @@ body{
 }
 
 .content h1:hover {
-    color: #ffffff; 
+    color: #f3a704; 
     text-shadow: 0 0 15px rgba(255, 255, 255, 0.8), 0 0 25px rgba(255, 255, 255, 0.6); 
     transition: all 0.3s ease-in-out; 
     transform: scale(1.1);
@@ -160,7 +178,7 @@ body{
   color: black !important;
 }
 
-.overlay .fa-heart{
+.overlay .fa-shopping-cart{
     color: red;
     padding: 2px;
     margin-right: 5px; 
@@ -309,4 +327,26 @@ body{
   .contact-info .btn {
     margin-top: 10px;
   }
-  
+  /* back-button */
+  #backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    background-color: #646464;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none; /* Default-a hide aagum */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s, transform 0.2s;
+}
+
+#backToTop:hover {
+    background-color: #252627;
+    transform: scale(1.1); /* Slightly increase size on hover */
+}
+

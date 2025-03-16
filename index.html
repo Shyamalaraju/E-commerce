@@ -15,10 +15,11 @@
       <img src="images/shopping-bag-icon.png" class="" alt="">Trendy</a>
       <span class="text-uppercase fw-lighter ms-2"></span>
       <div class="order-lg-2 nav-btns">
-        <button type="button" class="btn position-relative">
-         <i class="fa fa-shopping-cart text-dark"></i>
-        <span class="btn1 position-absolute top-0 start-100 translate-middle badge ">5</span>
+        <button type="button" class="btn position-relative" data-bs-toggle="modal" data-bs-target="#cartModal">
+          <i class="fa fa-shopping-cart text-dark"></i>
+          <span id="cart-count" class="btn1 position-absolute top-0 start-100 translate-middle badge">0</span>
         </button>
+        
         <button class="btn position-relative">
         <i class="fa fa-heart text-dark"></i>
         <span class="btn1 position-absolute top-0 start-100 translate-middle badge ">2</span>
@@ -125,7 +126,6 @@
     </div>
   </div>
 
-
 <header>         
   <div class="carousel slide car1" data-bs-ride="carousel">
     <div class="carousel-inner">
@@ -150,14 +150,12 @@
 </header>
 <section class="service py-2">
   <div class="container">
-
     <div class="row text-center">
       <div class="col-12 col-md-3 mb-4">
         <div class="service-item">
           <div class="service-item-icon mb-3">
             <img src="images/icons/service-icon-1.svg" alt="Service icon" class="img-fluid">
           </div>
-
           <div class="service-content">
             <p class="service-item-title h5">Free Shipping</p>
             <p class="service-item-text">On All Order Over $599</p>
@@ -170,7 +168,6 @@
           <div class="service-item-icon mb-3">
             <img src="images/icons/service-icon-2.svg" alt="Service icon" class="img-fluid">
           </div>
-
           <div class="service-content">
             <p class="service-item-title h5">Easy Returns</p>
             <p class="service-item-text">30 Day Returns Policy</p>
@@ -203,9 +200,7 @@
           </div>
         </div>
       </div>
-
     </div>
-
   </div>
 </section>
 <!-- contact page -->
@@ -214,8 +209,7 @@
     <h2 class = "position-relative d-inline-block">Contact us</h2>
   </div>
   <div class="row">
-    <!-- Contact Form Section -->
-     
+    <!-- Contact Form Section -->   
     <div class="col-md-6">
       <form>
         <div class="mb-3">
@@ -239,25 +233,8 @@
       </button>
       </form>
     </div>
-    <div class="modal fade" id="messageModal" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
-      <div class="modal-dialog">
-          <div class="modal-content">
-              <div class="modal-header">
-                  <h5 class="modal-title" id="modalTitle">Send Successful</h5>
-                  <button type="button" class=" btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                  Thanks for Contacting us!
-              </div>
-              <div class="modal-footer">
-                  <button type="button" class="btnmodal p-2" data-bs-dismiss="modal">Close</button>
-              </div>
-          </div>
-      </div>
-      </div>
     <div class="col-md-6 conimg d-none d-md-block">
-    </div>
-    
+    </div>  
   </div>
 </section>
 
@@ -315,9 +292,7 @@
       <span class="fw-light">
         +9786 6776 236
       </span>
-    </div>
-
-    
+    </div>  
     <h4>Follow Us</h4>
     <div>
       <a href="https://facebook.com" target="_blank" class="btn btn-outline-primary me-2"><i class="fab fa-facebook-f pe-1"></i>Facebook</a>
@@ -351,10 +326,9 @@
   </div>  
 </footer>
 
-  
+<button id="backToTop">↑</button>
 
-     
-
+<script src="script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

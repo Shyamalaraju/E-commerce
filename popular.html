@@ -15,10 +15,10 @@
         <img src="images/shopping-bag-icon.png" class="" alt="">Trendy</a>
         <span class="text-uppercase fw-lighter ms-2"></span>
         <div class="order-lg-2 nav-btns">
-          <button type="button" class="btn position-relative">
-          <i class="fa fa-shopping-cart text-dark"></i>
-          <span class="btn1 position-absolute top-0 start-100 translate-middle badge ">5</span>
-          </button>
+            <button type="button" class="btn position-relative">
+                <i class="fa fa-shopping-cart text-dark"></i>
+                <span id="cart-count" class="btn1 position-absolute top-0 start-100 translate-middle badge">0</span>
+              </button>
           <button class="btn position-relative">
           <i class="fa fa-heart text-dark"></i>
           <span class="btn1 position-absolute top-0 start-100 translate-middle badge ">2</span>
@@ -162,134 +162,127 @@
             </div>
             
            <!-- Payment Selection Modal -->
-<div class="modal fade" id="paymentModal" tabindex="-1">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">Select Payment Method</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-            </div>
-            <div class="modal-body">
-                <p>Please choose a payment method:</p>
-                <a href="#onlinePaymentModal" class="btn  text-dark w-100" data-bs-toggle="modal" data-bs-dismiss="modal"><i class="fa-solid fa-money-bill px-2"></i>Online Payment</a>
-                <a href="#codModal" class="btn text-dark  w-100 mt-2" data-bs-toggle="modal" data-bs-dismiss="modal"><i class="fa-solid fa-hand-holding-dollar px-2"></i>Cash on Delivery</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="onlinePaymentModal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">Online Payment</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-            </div>
-            <div class="modal-body">
-                <!-- Payment Options -->
-                <div class="mb-3 text-center g-5">
-                    <button class="btn btnsp" data-bs-toggle="collapse" data-bs-target="#upiPayment" aria-expanded="false" aria-controls="upiPayment"><i class="fa-solid fa-wallet px-2"></i>
-                        UPI
-                    </button>
-                    <button class="btn btnsp" data-bs-toggle="collapse" data-bs-target="#cardPayment" aria-expanded="false" aria-controls="cardPayment"><i class="fa-regular fa-credit-card px-2"></i>
-                        Card
-                    </button>
-                </div>
-
-                <!-- Payment Sections (Inside a Parent) -->
-                <div id="paymentOptions">
-                    <!-- UPI Payment Content -->
-                    <div class="collapse" id="upiPayment" data-bs-parent="#paymentOptions">
-                        <div class="card card-body ">
-                            <h5>UPI Payment</h5>
-                            <label for="upiId" class="form-label">Enter UPI ID:</label>
-                            <input type="text" class="form-control" id="upiId" placeholder="example@upi">
-                            <button class="payNowButton btn btn-success w-100 mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#paymentStatus" aria-expanded="false" aria-controls="paymentStatus">
-                                Pay Now
-                              </button>
-                              <div class="collapse" id="paymentStatus">
-                                <p class="paymentMessage text-center text-white bg-secondary mt-2"><i class="fa-solid fa-check  px-2"></i>Paid Successful</p>
-                              </div>
-                        </div>
+           <div class="modal fade" id="paymentModal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Select Payment Method</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                     </div>
-
-                    <!-- Card Payment Content -->
-                    <div class="collapse" id="cardPayment" data-bs-parent="#paymentOptions">
-                        <div class="card card-body">
-                            <h5>Card Payment</h5>
-                            <form>
-                                <div class="mb-3">
-                                    <label for="cardNumber" class="form-label">Card Number</label>
-                                    <input type="text" class="form-control" id="cardNumber" placeholder="1234 5678 9101 1121">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="cardName" class="form-label">Cardholder Name</label>
-                                    <input type="text" class="form-control" id="cardName" placeholder="John Doe">
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <label for="expiryDate" class="form-label">Expiry Date</label>
-                                        <input type="text" class="form-control" id="expiryDate" placeholder="MM/YY">
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label for="cvv" class="form-label">CVV</label>
-                                        <input type="text" class="form-control" id="cvv" placeholder="123">
-                                    </div>
-                                </div>
-                                <button class="payNowButton btn btn-success w-100 mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#paymentStatus" aria-expanded="false" aria-controls="paymentStatus">
-                                    Pay Now
-                                  </button>
-                                  <div class="collapse" id="paymentStatus">
-                                    <p class="paymentMessage text-center text-white bg-secondary mt-2"><i class="fa-solid fa-check px-2"></i>Paid Successful</p>
-                                  </div>
-                                  
-                            </form>
-                        </div>
+                    <div class="modal-body">
+                        <p>Please choose a payment method:</p>
+                        <a href="#onlinePaymentModal" class="btn  text-dark w-100" data-bs-toggle="modal" data-bs-dismiss="modal"><i class="fa-solid fa-money-bill px-2"></i>Online Payment</a>
+                        <a href="#codModal" class="btn text-dark  w-100 mt-2" data-bs-toggle="modal" data-bs-dismiss="modal"><i class="fa-solid fa-hand-holding-dollar px-2"></i>Cash on Delivery</a>
                     </div>
                 </div>
-
             </div>
         </div>
-    </div>
-</div>
-  
-  <!-- Modal Structure -->
-  <div class="modal fade" id="codModal" tabindex="-1" aria-labelledby="codModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="codModalLabel">Cash on Delivery</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        
+        <div class="modal fade" id="onlinePaymentModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Online Payment</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Payment Options -->
+                        <div class="mb-3 text-center g-5">
+                            <button class="btn btnsp" data-bs-toggle="collapse" data-bs-target="#upiPayment" aria-expanded="false" aria-controls="upiPayment"><i class="fa-solid fa-wallet px-2"></i>
+                                UPI
+                            </button>
+                            <button class="btn btnsp" data-bs-toggle="collapse" data-bs-target="#cardPayment" aria-expanded="false" aria-controls="cardPayment"><i class="fa-regular fa-credit-card px-2"></i>
+                                Card
+                            </button>
+                        </div>
+        
+                        <!-- Payment Sections (Inside a Parent) -->
+                        <div id="paymentOptions">
+                            <!-- UPI Payment Content -->
+                            <div class="collapse" id="upiPayment" data-bs-parent="#paymentOptions">
+                                <div class="card card-body ">
+                                    <h5>UPI Payment</h5>
+                                    <label for="upiId" class="form-label">Enter UPI ID:</label>
+                                    <input type="text" class="form-control" id="upiId" placeholder="example@upi">
+                                    <button class="payNowButton btn btn-success w-100 mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#paymentStatus" aria-expanded="false" aria-controls="paymentStatus">
+                                        Pay Now
+                                      </button>
+                                      <!-- <div class="collapse" id="paymentStatus">
+                                        <p class="paymentMessage text-center text-white bg-secondary mt-2"><i class="fa-solid fa-check px-2"></i>Paid Successful</p>
+                                      </div> -->
+                                </div>
+                            </div>
+        
+                            <!-- Card Payment Content -->
+                            <div class="collapse" id="cardPayment" data-bs-parent="#paymentOptions">
+                                <div class="card card-body">
+                                    <h5>Card Payment</h5>
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="cardNumber" class="form-label">Card Number</label>
+                                            <input type="text" class="form-control" id="cardNumber" placeholder="1234 5678 9101 1121">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="cardName" class="form-label">Cardholder Name</label>
+                                            <input type="text" class="form-control" id="cardName" placeholder="John Doe">
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label for="expiryDate" class="form-label">Expiry Date</label>
+                                                <input type="text" class="form-control" id="expiryDate" placeholder="MM/YY">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="cvv" class="form-label">CVV</label>
+                                                <input type="text" class="form-control" id="cvv" placeholder="123">
+                                            </div>
+                                        </div>
+                                        <button class="payNowButton btn btn-success w-100 mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#paymentStatus" aria-expanded="false" aria-controls="paymentStatus">
+                                            Pay Now
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="modal-body">
-          <p>Complete your Cash on Delivery payment below.</p>
-          <div class="mb-3">
-            <label for="billingAddress" class="form-label">Billing Address</label>
-            <input type="text" class="form-control" id="billingAddress" placeholder="Enter your address" required>
-        </div>
-
-        <!-- Contact Number -->
-        <div class="mb-3">
-            <label for="contactNumber" class="form-label">Contact Number</label>
-            <input type="text" class="form-control" id="contactNumber" placeholder="Enter your contact number" required>
-        </div>
-
-        <!-- Confirm Order Button -->
-        <button class="payNowButton btn btn-success w-100 mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#paymentStatus" aria-expanded="false" aria-controls="paymentStatus">
-            Confirm Order
-          </button>
-          <div class="collapse" id="paymentStatus">
-            <p class="paymentMessage text-center text-white bg-secondary mt-2"><i class="fa-solid fa-check px-2"></i>Order Confirmed</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-       
-            
+          
+          <!-- Modal Structure -->
+          <div class="modal fade" id="codModal" tabindex="-1" aria-labelledby="codModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="codModalLabel">Cash on Delivery</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>Complete your Cash on Delivery payment below.</p>
+                  <div class="mb-3">
+                    <label for="billingAddress" class="form-label">Billing Address</label>
+                    <input type="text" class="form-control" id="billingAddress" placeholder="Enter your address" required>
+                </div>
+        
+                <!-- Contact Number -->
+                <div class="mb-3">
+                    <label for="contactNumber" class="form-label">Contact Number</label>
+                    <input type="text" class="form-control" id="contactNumber" placeholder="Enter your contact number" required>
+                </div>
+        
+                <!-- Confirm Order Button -->
+                <button class="payNowButton btn btn-success w-100 mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#paymentStatus" aria-expanded="false" aria-controls="paymentStatus">
+                    Confirm Order
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>    
         </div>
     </section>  
-    
+    <button id="backToTop">↑</button>
+     
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
