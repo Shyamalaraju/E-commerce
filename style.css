@@ -3,21 +3,21 @@ body{
 }
 #cart-count {
     position: absolute;
-    top: -8px;  /* Badge correct position la irukkum */
-    right: -8px; /* Adjust pannunga if needed */
-    min-width: 22px; /* Square size maintain panna */
-    min-height: 22px; /* Square size maintain panna */
+    top: -8px;  
+    right: -8px; 
+    min-width: 22px; 
+    min-height: 22px; 
     background: red;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 4px; /* Square shape maintain */
+    border-radius: 4px; 
     font-size: 14px;
     font-weight: bold;
     text-align: center;
-    line-height: normal; /* Text perfect center la varum */
-    padding: 3px; /* Adjust for centering */
+    line-height: normal; 
+    padding: 3px; 
 }
 .btn1{
     background-color: hsl(352, 97%, 57%);
@@ -47,13 +47,13 @@ body{
 } 
 
 /* background video */
-.car1 .carousel-item video {
+.home .carousel-item video {
     height: 569px;
     object-fit: cover;
     width: 100% ;
 }
 
-.car1 .carousel-item::after {
+.home .carousel-item::after {
     content: "";
     position: absolute;
     top: 0;
@@ -64,7 +64,7 @@ body{
     z-index: 1;
 }
 
-.car1 .carousel-caption {
+.home .carousel-caption {
     position: absolute;
     top: 60%;
     left: 50%;
@@ -102,9 +102,7 @@ body{
     cursor: pointer;
     color: hsl(355, 98%, 58%);
 }
-.fa-check{
-    color: rgb(133, 248, 133);
-}
+
 /* collection page */
 
 #collection .color{
@@ -115,7 +113,7 @@ body{
 }
 .active-color{
     background-color: hsl(355, 98%, 58%) !important;
-    color: #fff !important;
+    color: #fff;
     border-color: hsl(355, 98%, 58%) !important;
 }
 .color:hover{
@@ -188,8 +186,25 @@ body{
     background-color: rgb(58, 57, 57);
     color: #fff !important;
 }
-   /* special page */
-   
+.accordion-button:focus {
+    box-shadow: none !important; 
+    border-color: transparent !important; 
+    outline: none !important; 
+}
+.accordion-button:not(.collapsed) {
+    background-color: transparent !important;  
+    color: black !important;
+    box-shadow: none !important;
+}
+.accordion-button:hover{
+    background-color: hsl(352, 97%, 57%) !important;
+    color: #fff !important;
+}
+.accordion-button::after {
+    display: none !important; 
+}
+
+   /* special page */   
 .special-img span{
     top: 20px;
     right: 20px;
@@ -347,6 +362,6 @@ body{
 
 #backToTop:hover {
     background-color: #252627;
-    transform: scale(1.1); /* Slightly increase size on hover */
+    transform: scale(1.1); 
 }
 

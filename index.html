@@ -1,39 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
   <nav class="navbar navbar-expand-lg  py-2 ">
     <div class="container">
       <a class="navbar-brand d-flex justify-content-around align-items-center order-lg-0" href="index.html">
-      <img src="images/shopping-bag-icon.png" class="" alt="">Trendy</a>
+        <img src="images/shopping-bag-icon.png" class="" alt="">Trendy</a>
       <span class="text-uppercase fw-lighter ms-2"></span>
       <div class="order-lg-2 nav-btns">
         <button type="button" class="btn position-relative" data-bs-toggle="modal" data-bs-target="#cartModal">
           <i class="fa fa-shopping-cart text-dark"></i>
           <span id="cart-count" class="btn1 position-absolute top-0 start-100 translate-middle badge">0</span>
         </button>
-        
+
         <button class="btn position-relative">
-        <i class="fa fa-heart text-dark"></i>
-        <span class="btn1 position-absolute top-0 start-100 translate-middle badge ">2</span>
+          <i class="fa fa-heart text-dark"></i>
+          <span class="btn1 position-absolute top-0 start-100 translate-middle badge ">2</span>
         </button>
         <button class="btn position-relative">
-        <i class="fa fa-search text-dark"></i>
-        <span class="btn1 position-absolute top-0 start-100 translate-middle badge "></span>
-        </button>        
+          <i class="fa fa-search text-dark"></i>
+          <span class="btn1 position-absolute top-0 start-100 translate-middle badge "></span>
+        </button>
       </div>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse order-lg-1" id="navmenu">
-         <ul class="navbar-nav mx-auto text-center ">
+        <ul class="navbar-nav mx-auto text-center ">
           <li class="nav-item py-2 px-2">
             <a class="nav-link  text-uppercase text-dark" aria-current="page" href="index.html">Home</a>
           </li>
@@ -55,17 +61,17 @@
           <li class="nav-item py-2 px-2">
             <a class="nav-link text-dark text-uppercase " href="#contact">Contact</a>
           </li>
-         </ul>
-          <div class="d-flex me-2">
-            <!-- Login Button -->
-            <a class="btn btn-dark text-white ms-1" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
-            <!-- Sign Up Button -->
-            <a class="btn btn-dark text-white ms-2" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</a>
-          </div>
+        </ul>
+        <div class="d-flex me-2">
+          <!-- Login Button -->
+          <a class="btn btn-dark text-white ms-1" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
+          <!-- Sign Up Button -->
+          <a class="btn btn-dark text-white ms-2" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</a>
+        </div>
       </div>
     </div>
   </nav>
-<!-- login modal -->
+  <!-- login modal -->
   <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -83,12 +89,13 @@
               <label for="loginPassword" class="form-label">Password</label>
               <input type="password" class="form-control" id="loginPassword" placeholder="Enter your password">
             </div>
-            <button type="submit" class="btn btn-primary w-100">Login</button>
-            
+            <button type="submit" class="btn btn-info w-100">Login</button>
+
           </form>
-          <div class="mt-3 text-center">
-            <p>Do you not have an account? <a href="#signupModal" data-bs-toggle="modal" data-bs-target="#signupModal">sign up</a></p>
-        </div>
+          <div class="mt-3 text-center ">
+            <p>Do you not have an account? <a href="#signupModal" class="text-decoration-none" data-bs-toggle="modal"
+                data-bs-target="#signupModal">sign up</a></p>
+          </div>
         </div>
       </div>
     </div>
@@ -119,217 +126,227 @@
             <button type="submit" class="btn btn-success w-100">Sign Up</button>
           </form>
           <div class="mt-3 text-center">
-            <p>Already have an account? <a href="#loginModal" data-bs-toggle="modal" data-bs-target="#loginModal">Login here</a></p>
-        </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-<header>         
-  <div class="carousel slide car1" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active" >
-       <video class="d-block w-100" autoplay loop muted data-bs-interval="100">
-        <source src="images/background.mp4">
-       </video>
-      </div>
-     <div class="carousel-item">
-        <video class="d-block w-100" autoplay loop muted data-bs-interval="100">
-         <source src="images/back2.mp4">
-        </video> 
-      </div>
-  </div>
-    <div class="carousel-caption d-flex justify-content-center align-items-center">
-      <div class="content">
-        <h1 class="fw-bold">Shop the Latest  Trends</h1>
-        <p>Discover our Exclusive collection of dresses and accessories.</p>
-      </div>          
-    </div>
-  </div>      
-</header>
-<section class="service py-2">
-  <div class="container">
-    <div class="row text-center">
-      <div class="col-12 col-md-3 mb-4">
-        <div class="service-item">
-          <div class="service-item-icon mb-3">
-            <img src="images/icons/service-icon-1.svg" alt="Service icon" class="img-fluid">
-          </div>
-          <div class="service-content">
-            <p class="service-item-title h5">Free Shipping</p>
-            <p class="service-item-text">On All Order Over $599</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-md-3 mb-4">
-        <div class="service-item">
-          <div class="service-item-icon mb-3">
-            <img src="images/icons/service-icon-2.svg" alt="Service icon" class="img-fluid">
-          </div>
-          <div class="service-content">
-            <p class="service-item-title h5">Easy Returns</p>
-            <p class="service-item-text">30 Day Returns Policy</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-md-3 mb-4">
-        <div class="service-item">
-          <div class="service-item-icon mb-3">
-            <img src="images/icons/service-icon-3.svg" alt="Service icon" class="img-fluid">
-          </div>
-
-          <div class="service-content">
-            <p class="service-item-title h5">Secure Payment</p>
-            <p class="service-item-text">100% Secure Guarantee</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-md-3 mb-4">
-        <div class="service-item">
-          <div class="service-item-icon mb-3">
-            <img src="images/icons/service-icon-4.svg" alt="Service icon" class="img-fluid">
-          </div>
-
-          <div class="service-content">
-            <p class="service-item-title h5">Special Support</p>
-            <p class="service-item-text">24/7 Dedicated Support</p>
+            <p>Already have an account? <a href="#loginModal" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#loginModal">Login
+                here</a></p>
           </div>
         </div>
       </div>
     </div>
   </div>
-</section>
-<!-- contact page -->
-<section id="contact" class="container ">
-  <div class = "title text-center">
-    <h2 class = "position-relative d-inline-block">Contact us</h2>
-  </div>
-  <div class="row">
-    <!-- Contact Form Section -->   
-    <div class="col-md-6">
-      <form>
-        <div class="mb-3">
-          <label for="contactName" class="form-label">Full Name</label>
-          <input type="text" class="form-control" id="contactName" placeholder="Enter your full name">
+<!-- home page -->
+  <header>
+    <div class="carousel slide home" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <video class="d-block w-100" autoplay loop muted data-bs-interval="100">
+            <source src="images/background.mp4">
+          </video>
         </div>
-        <div class="mb-3">
-          <label for="contactEmail" class="form-label">Email Address</label>
-          <input type="email" class="form-control" id="contactEmail" placeholder="Enter your email">
+        <div class="carousel-item">
+          <video class="d-block w-100" autoplay loop muted data-bs-interval="100">
+            <source src="images/back2.mp4">
+          </video>
         </div>
-        <div class="mb-3">
-          <label for="contactSubject" class="form-label">Subject</label>
-          <input type="text" class="form-control" id="contactSubject" placeholder="Subject of your message">
+      </div>
+      <div class="carousel-caption d-flex justify-content-center align-items-center">
+        <div class="content">
+          <h1 class="fw-bold">Shop the Latest Trends</h1>
+          <p>Discover our Exclusive collection of dresses and accessories.</p>
         </div>
-        <div class="mb-3">
-          <label for="contactMessage" class="form-label">Message</label>
-          <textarea class="form-control" id="contactMessage" rows="4" placeholder="Your message"></textarea>
-        </div>
-        <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#messageModal">
-          Send a message
-      </button>
-      </form>
+      </div>
     </div>
-    <div class="col-md-6 conimg d-none d-md-block">
-    </div>  
-  </div>
-</section>
+  </header>
+  <section class="service py-2">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-12 col-md-3 mb-4">
+          <div class="service-item">
+            <div class="service-item-icon mb-3">
+              <img src="images/icons/service-icon-1.svg" alt="Service icon" class="img-fluid">
+            </div>
+            <div class="service-content">
+              <p class="service-item-title h5">Free Shipping</p>
+              <p class="service-item-text">On All Order Over $599</p>
+            </div>
+          </div>
+        </div>
 
-<div class="contact-info mt-4">
-  <div class="container">
-    <div class="row ">
-    <div class="col-md-6 col-lg-3">
-      <h5 class="fw-light">Links</h5>
-      <ul class="list-unstyled d-flex flex-column">
-        <li class="my-3">
-          <a href="#" class="text-white text-decoration-none">
-            <i class="fas fa-chevron-right me-1"></i> Home
-          </a>
-        </li>
-        <li class="my-3">
-          <a href="collection.html" class="text-white text-decoration-none">
-            <i class="fas fa-chevron-right me-1"></i> Collection
-          </a>
-        </li>
-        <li class="my-3">
-          <a href="blog.html" class="text-white text-decoration-none">
-            <i class="fas fa-chevron-right me-1"></i> Blogs
-          </a>
-        </li>
-        <li class="my-3">
-          <a href="about.html" class="text-white text-decoration-none">
-            <i class="fas fa-chevron-right me-1"></i> About Us
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="col-md-6 col-lg-4">
-    <h4>Our Location</h4>
-    <div class="d-flex justify-content-start align-items-start my-3">
-    <span class="me-3">
-      <i class="fas fa-map-marked-alt"></i>
-    </span>
-    <span class="fw-light">
-      Albert Street, New York, AS 756, United States of America
-    </span>
-  </div>
-    
-    <div class="d-flex justify-content-start align-items-start my-2">
-      <span class="me-3">
-        <i class="fas fa-envelope"></i>
-      </span>
-      <span class="fw-light">
-        Trendy.support@gmail.com
-      </span>
-    </div>
-    <div class="d-flex justify-content-start align-items-start my-2">
-      <span class="me-3">
-        <i class="fas fa-phone-alt"></i>
-      </span>
-      <span class="fw-light">
-        +9786 6776 236
-      </span>
-    </div>  
-    <h4>Follow Us</h4>
-    <div>
-      <a href="https://facebook.com" target="_blank" class="btn btn-outline-primary me-2"><i class="fab fa-facebook-f pe-1"></i>Facebook</a>
-      <a href="https://twitter.com" target="_blank" class="btn btn-outline-info me-2"><i class="fab fa-twitter pe-1"></i>Twitter</a>
-      <a href="https://instagram.com" target="_blank" class="btn btn-outline-danger"> <i class="fab fa-instagram pe-1"></i>Instagram</a>
-    </div>
-    </div>
-    <div class="col-lg-5">
-      <h4>Find Us on the Map</h4>
-      <!-- Embed Google Map -->
-      <iframe src="https://www.google.com/maps/embed?pb=..." class="py-2" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </div>
-    </div>
-  </div>
-</div>
-</div>
+        <div class="col-12 col-md-3 mb-4">
+          <div class="service-item">
+            <div class="service-item-icon mb-3">
+              <img src="images/icons/service-icon-2.svg" alt="Service icon" class="img-fluid">
+            </div>
+            <div class="service-content">
+              <p class="service-item-title h5">Easy Returns</p>
+              <p class="service-item-text">30 Day Returns Policy</p>
+            </div>
+          </div>
+        </div>
 
-<!-- footer section -->
-<footer>
- <div class="footer-bottom bg-dark p-3">
-   <div class="container text-center">
+        <div class="col-12 col-md-3 mb-4">
+          <div class="service-item">
+            <div class="service-item-icon mb-3">
+              <img src="images/icons/service-icon-3.svg" alt="Service icon" class="img-fluid">
+            </div>
+
+            <div class="service-content">
+              <p class="service-item-title h5">Secure Payment</p>
+              <p class="service-item-text">100% Secure Guarantee</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-3 mb-4">
+          <div class="service-item">
+            <div class="service-item-icon mb-3">
+              <img src="images/icons/service-icon-4.svg" alt="Service icon" class="img-fluid">
+            </div>
+
+            <div class="service-content">
+              <p class="service-item-title h5">Special Support</p>
+              <p class="service-item-text">24/7 Dedicated Support</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- contact page -->
+  <section id="contact" class="container ">
+    <div class="title text-center">
+      <h2 class="position-relative d-inline-block">Contact us</h2>
+    </div>
     <div class="row">
-      <div class="col-12">
-       <img src="images/payment.png" alt="payment method" class="payment-img pb-1 w-50">
-     <p class="copyright text-white">
-      Copyright &copy; <a href="#">Trendy</a> all rights reserved.
-     </p>
-     </div>
-    </div> 
-   </div>
-  </div>  
-</footer>
+      <!-- Contact Form Section -->
+      <div class="col-md-6">
+        <form>
+          <div class="mb-3">
+            <label for="contactName" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="contactName" placeholder="Enter your full name">
+          </div>
+          <div class="mb-3">
+            <label for="contactEmail" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="contactEmail" placeholder="Enter your email">
+          </div>
+          <div class="mb-3">
+            <label for="contactSubject" class="form-label">Subject</label>
+            <input type="text" class="form-control" id="contactSubject" placeholder="Subject of your message">
+          </div>
+          <div class="mb-3">
+            <label for="contactMessage" class="form-label">Message</label>
+            <textarea class="form-control" id="contactMessage" rows="4" placeholder="Your message"></textarea>
+          </div>
+          <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#messageModal">
+            Send a message
+          </button>
+        </form>
+      </div>
+      <div class="col-md-6 conimg d-none d-md-block">
+      </div>
+    </div>
+  </section>
 
-<button id="backToTop">↑</button>
+  <div class="contact-info mt-4">
+    <div class="container">
+      <div class="row ">
+        <div class="col-md-6 col-lg-3">
+          <h5 class="fw-light">Links</h5>
+          <ul class="list-unstyled d-flex flex-column">
+            <li class="my-3">
+              <a href="#" class="text-white text-decoration-none">
+                <i class="fas fa-chevron-right me-1"></i> Home
+              </a>
+            </li>
+            <li class="my-3">
+              <a href="collection.html" class="text-white text-decoration-none">
+                <i class="fas fa-chevron-right me-1"></i> Collection
+              </a>
+            </li>
+            <li class="my-3">
+              <a href="blog.html" class="text-white text-decoration-none">
+                <i class="fas fa-chevron-right me-1"></i> Blogs
+              </a>
+            </li>
+            <li class="my-3">
+              <a href="about.html" class="text-white text-decoration-none">
+                <i class="fas fa-chevron-right me-1"></i> About Us
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <h4>Our Location</h4>
+          <div class="d-flex justify-content-start align-items-start my-3">
+            <span class="me-3">
+              <i class="fas fa-map-marked-alt"></i>
+            </span>
+            <span class="fw-light">
+              Albert Street, New York, AS 756, United States of America
+            </span>
+          </div>
 
-<script src="script.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+          <div class="d-flex justify-content-start align-items-start my-2">
+            <span class="me-3">
+              <i class="fas fa-envelope"></i>
+            </span>
+            <span class="fw-light">
+              Trendy.support@gmail.com
+            </span>
+          </div>
+          <div class="d-flex justify-content-start align-items-start my-2">
+            <span class="me-3">
+              <i class="fas fa-phone-alt"></i>
+            </span>
+            <span class="fw-light">
+              +9786 6776 236
+            </span>
+          </div>
+          <h4>Follow Us</h4>
+          <div>
+            <a href="https://facebook.com" target="_blank" class="btn btn-outline-primary me-2"><i
+                class="fab fa-facebook-f pe-1"></i>Facebook</a>
+            <a href="https://twitter.com" target="_blank" class="btn btn-outline-info me-2"><i
+                class="fab fa-twitter pe-1"></i>Twitter</a>
+            <a href="https://instagram.com" target="_blank" class="btn btn-outline-danger"> <i
+                class="fab fa-instagram pe-1"></i>Instagram</a>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <h4>Find Us on the Map</h4>
+          <!-- Embed Google Map -->
+          <iframe src="https://www.google.com/maps/embed?pb=..." class="py-2" width="100%" height="250"
+            style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- footer section -->
+  <footer>
+    <div class="footer-bottom bg-dark p-3">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-12">
+            <img src="images/payment.png" alt="payment method" class="payment-img pb-1 w-50">
+            <p class="copyright text-white">
+              Copyright &copy; <a href="#">Trendy</a> all rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button id="backToTop">↑</button>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

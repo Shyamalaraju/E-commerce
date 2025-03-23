@@ -13,9 +13,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // ✅ Ensure count updates properly
         cartBadge.textContent = cartCount;
-        cartBadge.style.display = "inline-block"; // Always show badge
+        cartBadge.style.display = "inline-block"; 
 
-        console.log("🛒 Updated Cart Count:", cartCount); // Debug log
+        console.log("🛒 Updated Cart Count:", cartCount); 
     }
 
     // ✅ Show 0 when page loads
@@ -24,10 +24,10 @@ document.addEventListener("DOMContentLoaded", function () {
     addToCartButtons.forEach(button => {
         button.addEventListener("click", function () {
             let cartCount = parseInt(sessionStorage.getItem("cartCount")) || 0;
-            cartCount++; // Increase count
-            sessionStorage.setItem("cartCount", cartCount); // ✅ Store in sessionStorage
+            cartCount++; 
+            sessionStorage.setItem("cartCount", cartCount); 
 
-            updateCartCount(); // Update UI
+            updateCartCount(); 
 
             // Change button UI
             this.textContent = "Added!";
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Scroll pannina button show pannanum
     window.addEventListener("scroll", function () {
-        if (window.scrollY > 500) { // If user scrolls down 500px
+        if (window.scrollY > 500) { 
             backToTop.style.display = "block";
         } else {
             backToTop.style.display = "none";
